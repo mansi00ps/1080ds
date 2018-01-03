@@ -1,0 +1,165 @@
+.section{
+  background-color:#282E34;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+p{
+  font: "Lato",serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("http://res.cloudinary.com/manasibs/image/upload/v1504285697/adult_blur_color_daylight_denim_fashion_foot_footwear-1175898_hwdepe.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("http://res.cloudinary.com/manasibs/image/upload/c_scale,w_332/v1504285699/pexels-photo-508957_lraezi.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("http://res.cloudinary.com/manasibs/image/upload/v1504237345/pexels-photo-349494_ywzxds.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/*begin css code for slideshow*/
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.inactive {
+  background-color: none;
+}
+
+/* Fading animation */
+.transition {
+  -webkit-animation-name: transition;
+  -webkit-animation-duration: 1.5s;
+  animation-name: transition;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes transition {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*end css code for slideshow*/
+.copyright {
+  
+  font-size: 10px;
+  text-align: right;
+  text-align:bottom;
+}
+
+/*for the navbar issue # in-page issue*/
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px; 
+  visibility: hidden; 
+}
