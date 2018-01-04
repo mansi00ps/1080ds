@@ -67,12 +67,8 @@ h3 {
         background-attachment: scroll;
     }
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
+
+
 
 /*begin css code for slideshow*/
 * {box-sizing:border-box}
